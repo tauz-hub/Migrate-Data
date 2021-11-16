@@ -1,0 +1,9 @@
+{
+  "main": "self.js",
+  "scripts": {
+    
+  },
+  "dependencies": {
+    "discord.js": "^11.1.0"
+  }
+}
