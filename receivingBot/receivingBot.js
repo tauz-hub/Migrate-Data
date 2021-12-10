@@ -57,14 +57,12 @@ client.on('message', async msg => {
     })
     msg.channel.send(`${JSON.stringify(userObj)}`)
 
-
     fs.readFile("./database/newData.json", function (err, content) {
       if (err) throw err;
       let parseJson = JSON.parse(content);
       parseJson.push(userObj)
       fs.writeFile("./database/newData.json", JSON.stringify(parseJson), function (err) {
         if (err) throw err;
-
       })
     })
   }
