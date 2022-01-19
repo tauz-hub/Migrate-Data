@@ -4,7 +4,7 @@ const json = require('../database/users.json')
 const accounts = require('../config/accounts.json')
 const path = require('path')
 const numberSelf = parseInt(path.basename(__dirname).replace('self', ''));
-const userOwner = '454059471765766156'
+const userOwner = '' //controller user id
 function delay(n) {
   return new Promise(function (resolve) {
     setTimeout(resolve, n * 1050);
